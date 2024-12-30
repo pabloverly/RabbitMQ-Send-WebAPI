@@ -27,10 +27,10 @@ namespace WebApplication1.Controllers
 
                 var factory = new ConnectionFactory
                 {
-                    HostName = "191.252.191.68",
+                    HostName = "IP_SERVIDOR",
                     Port = 5672, // Porta padrão para conexões AMQP (não HTTP)
-                    UserName = "guest", // Substitua pelo seu usuário do RabbitMQ
-                    Password = "guest" // Substitua pela sua senha do RabbitMQ
+                    UserName = "USUARIO", // Substitua pelo seu usuário do RabbitMQ
+                    Password = "SENHA" // Substitua pela sua senha do RabbitMQ
                 };
 
                 using var connection = factory.CreateConnection();
